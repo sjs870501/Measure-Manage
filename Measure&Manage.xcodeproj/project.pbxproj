@@ -7,21 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5200FE042243958C003DFE9D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5200FE032243958C003DFE9D /* ImageViewController.swift */; };
+		5200FE062247834A003DFE9D /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5200FE052247834A003DFE9D /* ImageCollectionViewController.swift */; };
+		520B9A3921F8583200906965 /* ProjectsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A3821F8583100906965 /* ProjectsCell.swift */; };
+		520B9A3C21FB3AF600906965 /* ProjectItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A3B21FB3AF600906965 /* ProjectItemsCell.swift */; };
+		520B9A4321FDDB0700906965 /* ProjectDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A4221FDDB0700906965 /* ProjectDetailsTableViewController.swift */; };
+		520B9A4521FDDD4000906965 /* ProjectDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A4421FDDD4000906965 /* ProjectDetailsHeader.swift */; };
+		520B9A4721FEC7AE00906965 /* ProjectDetailTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A4621FEC7AE00906965 /* ProjectDetailTextFieldCell.swift */; };
+		520B9A4B2217FEA800906965 /* DeductionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A4A2217FEA800906965 /* DeductionDetailTableViewController.swift */; };
+		520B9A4D2218114E00906965 /* DeductionDetailAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A4C2218114E00906965 /* DeductionDetailAddViewController.swift */; };
+		520B9A5222265B8000906965 /* ProjectItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B9A5122265B8000906965 /* ProjectItemDetailViewController.swift */; };
+		521569F721E80D0500A13D10 /* Measure&Manage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 521569F521E80D0500A13D10 /* Measure&Manage.xcdatamodeld */; };
+		521569F921E80D2F00A13D10 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521569F821E80D2F00A13D10 /* CoreDataManager.swift */; };
+		521569FB21E86E3F00A13D10 /* DeductionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521569FA21E86E3F00A13D10 /* DeductionTableViewController.swift */; };
+		521569FD21E88DD700A13D10 /* ProjectItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521569FC21E88DD700A13D10 /* ProjectItemsCollectionViewController.swift */; };
+		521569FF21EC2A5300A13D10 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521569FE21EC2A5300A13D10 /* CustomTableView.swift */; };
 		5229A1E021DF81CD00991945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A1DF21DF81CD00991945 /* AppDelegate.swift */; };
-		5229A1E221DF81CD00991945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A1E121DF81CD00991945 /* ViewController.swift */; };
+		5229A1E221DF81CD00991945 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A1E121DF81CD00991945 /* MainTabBarController.swift */; };
 		5229A1E521DF81CD00991945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5229A1E321DF81CD00991945 /* Main.storyboard */; };
-		5229A1E721DF81CE00991945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5229A1E621DF81CE00991945 /* Assets.xcassets */; };
 		5229A1EA21DF81CE00991945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5229A1E821DF81CE00991945 /* LaunchScreen.storyboard */; };
+		5229A1F221DF827F00991945 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A1F121DF827F00991945 /* MeasureViewController.swift */; };
+		5229A1F421E0446100991945 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A1F321E0446100991945 /* Extension.swift */; };
+		5229A20121E0757400991945 /* WidthHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A20021E0757400991945 /* WidthHeightViewController.swift */; };
+		5229A20321E0823F00991945 /* DeductionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A20221E0823F00991945 /* DeductionCollectionViewController.swift */; };
+		5229A20521E086A500991945 /* DeductionProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A20421E086A500991945 /* DeductionProductTableViewController.swift */; };
+		5229A20821E08E1C00991945 /* DeductionPartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229A20721E08E1C00991945 /* DeductionPartTableViewController.swift */; };
+		5229A20C21E0BD3100991945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5229A20B21E0BD3100991945 /* Assets.xcassets */; };
+		52B4FF06223CA4A900AB3FD2 /* ProjectItemDetailDeductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FF05223CA4A900AB3FD2 /* ProjectItemDetailDeductionCell.swift */; };
+		52B4FF08223D08EF00AB3FD2 /* SearchCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FF07223D08EF00AB3FD2 /* SearchCollectionViewHeader.swift */; };
+		52DB001A21E33DBC0037D91F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB001921E33DBC0037D91F /* Project.swift */; };
+		52DB001C21E33E620037D91F /* LocationNameCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB001B21E33E620037D91F /* LocationNameCollectionViewController.swift */; };
+		52DB001E21E341840037D91F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB001D21E341840037D91F /* Location.swift */; };
+		52DB002021E35BF90037D91F /* LocationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB001F21E35BF90037D91F /* LocationHeaderView.swift */; };
+		52DB002221E3601C0037D91F /* LocationUnitNumberHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB002121E3601C0037D91F /* LocationUnitNumberHeaderView.swift */; };
+		52DB002421E36EF50037D91F /* LocationNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB002321E36EF50037D91F /* LocationNameCell.swift */; };
+		52DB002B21E5686F0037D91F /* NumberPadStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB002A21E5686F0037D91F /* NumberPadStackView.swift */; };
+		52DB002D21E56C940037D91F /* Deduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB002C21E56C940037D91F /* Deduction.swift */; };
+		52DB003121E604CB0037D91F /* ProjectsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB003021E604CB0037D91F /* ProjectsCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5200FE032243958C003DFE9D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		5200FE052247834A003DFE9D /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		520B9A3821F8583100906965 /* ProjectsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCell.swift; sourceTree = "<group>"; };
+		520B9A3B21FB3AF600906965 /* ProjectItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemsCell.swift; sourceTree = "<group>"; };
+		520B9A4221FDDB0700906965 /* ProjectDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsTableViewController.swift; sourceTree = "<group>"; };
+		520B9A4421FDDD4000906965 /* ProjectDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsHeader.swift; sourceTree = "<group>"; };
+		520B9A4621FEC7AE00906965 /* ProjectDetailTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailTextFieldCell.swift; sourceTree = "<group>"; };
+		520B9A4A2217FEA800906965 /* DeductionDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionDetailTableViewController.swift; sourceTree = "<group>"; };
+		520B9A4C2218114E00906965 /* DeductionDetailAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionDetailAddViewController.swift; sourceTree = "<group>"; };
+		520B9A5122265B8000906965 /* ProjectItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemDetailViewController.swift; sourceTree = "<group>"; };
+		521569F621E80D0500A13D10 /* Measure&Manage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Measure&Manage.xcdatamodel"; sourceTree = "<group>"; };
+		521569F821E80D2F00A13D10 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		521569FA21E86E3F00A13D10 /* DeductionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionTableViewController.swift; sourceTree = "<group>"; };
+		521569FC21E88DD700A13D10 /* ProjectItemsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemsCollectionViewController.swift; sourceTree = "<group>"; };
+		521569FE21EC2A5300A13D10 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		5229A1DC21DF81CD00991945 /* Measure&Manage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Measure&Manage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5229A1DF21DF81CD00991945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5229A1E121DF81CD00991945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5229A1E121DF81CD00991945 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5229A1E421DF81CD00991945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5229A1E621DF81CE00991945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5229A1E921DF81CE00991945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5229A1EB21DF81CE00991945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5229A1F121DF827F00991945 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		5229A1F321E0446100991945 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5229A20021E0757400991945 /* WidthHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthHeightViewController.swift; sourceTree = "<group>"; };
+		5229A20221E0823F00991945 /* DeductionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionCollectionViewController.swift; sourceTree = "<group>"; };
+		5229A20421E086A500991945 /* DeductionProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionProductTableViewController.swift; sourceTree = "<group>"; };
+		5229A20721E08E1C00991945 /* DeductionPartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionPartTableViewController.swift; sourceTree = "<group>"; };
+		5229A20B21E0BD3100991945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/IntermediateTraining32_custom_migration_policy/IntermediateTraining/Assets.xcassets; sourceTree = "<group>"; };
+		52B4FF05223CA4A900AB3FD2 /* ProjectItemDetailDeductionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemDetailDeductionCell.swift; sourceTree = "<group>"; };
+		52B4FF07223D08EF00AB3FD2 /* SearchCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewHeader.swift; sourceTree = "<group>"; };
+		52DB001921E33DBC0037D91F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		52DB001B21E33E620037D91F /* LocationNameCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNameCollectionViewController.swift; sourceTree = "<group>"; };
+		52DB001D21E341840037D91F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		52DB001F21E35BF90037D91F /* LocationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHeaderView.swift; sourceTree = "<group>"; };
+		52DB002121E3601C0037D91F /* LocationUnitNumberHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUnitNumberHeaderView.swift; sourceTree = "<group>"; };
+		52DB002321E36EF50037D91F /* LocationNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNameCell.swift; sourceTree = "<group>"; };
+		52DB002A21E5686F0037D91F /* NumberPadStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadStackView.swift; sourceTree = "<group>"; };
+		52DB002C21E56C940037D91F /* Deduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deduction.swift; sourceTree = "<group>"; };
+		52DB003021E604CB0037D91F /* ProjectsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +99,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5200FE022243957A003DFE9D /* ImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5200FE032243958C003DFE9D /* ImageViewController.swift */,
+				5200FE052247834A003DFE9D /* ImageCollectionViewController.swift */,
+			);
+			path = ImageViewController;
+			sourceTree = "<group>";
+		};
+		520B9A3721F33BC200906965 /* Location Name */ = {
+			isa = PBXGroup;
+			children = (
+				52DB002321E36EF50037D91F /* LocationNameCell.swift */,
+				52DB002121E3601C0037D91F /* LocationUnitNumberHeaderView.swift */,
+				52DB001F21E35BF90037D91F /* LocationHeaderView.swift */,
+			);
+			path = "Location Name";
+			sourceTree = "<group>";
+		};
+		520B9A4121FC9AD100906965 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				52DB003021E604CB0037D91F /* ProjectsCollectionViewController.swift */,
+				521569FC21E88DD700A13D10 /* ProjectItemsCollectionViewController.swift */,
+				520B9A5122265B8000906965 /* ProjectItemDetailViewController.swift */,
+				520B9A4221FDDB0700906965 /* ProjectDetailsTableViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		520B9A4822044C9000906965 /* ProjectDetail */ = {
+			isa = PBXGroup;
+			children = (
+				520B9A4421FDDD4000906965 /* ProjectDetailsHeader.swift */,
+				520B9A4621FEC7AE00906965 /* ProjectDetailTextFieldCell.swift */,
+			);
+			path = ProjectDetail;
+			sourceTree = "<group>";
+		};
+		520B9A4922044D0D00906965 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				520B9A3821F8583100906965 /* ProjectsCell.swift */,
+				520B9A3B21FB3AF600906965 /* ProjectItemsCell.swift */,
+				52B4FF05223CA4A900AB3FD2 /* ProjectItemDetailDeductionCell.swift */,
+				52B4FF07223D08EF00AB3FD2 /* SearchCollectionViewHeader.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
 		5229A1D321DF81CD00991945 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +168,76 @@
 		5229A1DE21DF81CD00991945 /* Measure&Manage */ = {
 			isa = PBXGroup;
 			children = (
+				52DB001821E33DA00037D91F /* Model */,
+				52DB002821E568040037D91F /* View */,
+				52DB002921E568110037D91F /* Controller */,
 				5229A1DF21DF81CD00991945 /* AppDelegate.swift */,
-				5229A1E121DF81CD00991945 /* ViewController.swift */,
+				5229A1E121DF81CD00991945 /* MainTabBarController.swift */,
+				5229A20B21E0BD3100991945 /* Assets.xcassets */,
 				5229A1E321DF81CD00991945 /* Main.storyboard */,
-				5229A1E621DF81CE00991945 /* Assets.xcassets */,
 				5229A1E821DF81CE00991945 /* LaunchScreen.storyboard */,
 				5229A1EB21DF81CE00991945 /* Info.plist */,
+				5229A1F321E0446100991945 /* Extension.swift */,
 			);
 			path = "Measure&Manage";
+			sourceTree = "<group>";
+		};
+		5229A1FF21E0754A00991945 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				5229A1F121DF827F00991945 /* MeasureViewController.swift */,
+				52DB001B21E33E620037D91F /* LocationNameCollectionViewController.swift */,
+				5229A20021E0757400991945 /* WidthHeightViewController.swift */,
+				5229A20221E0823F00991945 /* DeductionCollectionViewController.swift */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
+		5229A20621E08DF400991945 /* Deduction */ = {
+			isa = PBXGroup;
+			children = (
+				5229A20421E086A500991945 /* DeductionProductTableViewController.swift */,
+				5229A20721E08E1C00991945 /* DeductionPartTableViewController.swift */,
+				521569FA21E86E3F00A13D10 /* DeductionTableViewController.swift */,
+				520B9A4A2217FEA800906965 /* DeductionDetailTableViewController.swift */,
+				520B9A4C2218114E00906965 /* DeductionDetailAddViewController.swift */,
+				521569FE21EC2A5300A13D10 /* CustomTableView.swift */,
+			);
+			path = Deduction;
+			sourceTree = "<group>";
+		};
+		52DB001821E33DA00037D91F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52DB001921E33DBC0037D91F /* Project.swift */,
+				52DB002C21E56C940037D91F /* Deduction.swift */,
+				52DB001D21E341840037D91F /* Location.swift */,
+				521569F821E80D2F00A13D10 /* CoreDataManager.swift */,
+				521569F521E80D0500A13D10 /* Measure&Manage.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DB002821E568040037D91F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52DB002A21E5686F0037D91F /* NumberPadStackView.swift */,
+				520B9A4922044D0D00906965 /* Project */,
+				520B9A4822044C9000906965 /* ProjectDetail */,
+				520B9A3721F33BC200906965 /* Location Name */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52DB002921E568110037D91F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5200FE022243957A003DFE9D /* ImageViewController */,
+				520B9A4121FC9AD100906965 /* Project */,
+				5229A20621E08DF400991945 /* Deduction */,
+				5229A1FF21E0754A00991945 /* Measure */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +272,7 @@
 				TargetAttributes = {
 					5229A1DB21DF81CD00991945 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -123,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5229A1EA21DF81CE00991945 /* LaunchScreen.storyboard in Resources */,
-				5229A1E721DF81CE00991945 /* Assets.xcassets in Resources */,
 				5229A1E521DF81CD00991945 /* Main.storyboard in Resources */,
+				5229A20C21E0BD3100991945 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +312,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5229A1E221DF81CD00991945 /* ViewController.swift in Sources */,
+				521569FD21E88DD700A13D10 /* ProjectItemsCollectionViewController.swift in Sources */,
+				520B9A4521FDDD4000906965 /* ProjectDetailsHeader.swift in Sources */,
+				520B9A4321FDDB0700906965 /* ProjectDetailsTableViewController.swift in Sources */,
+				5229A20321E0823F00991945 /* DeductionCollectionViewController.swift in Sources */,
+				52DB001A21E33DBC0037D91F /* Project.swift in Sources */,
+				521569F721E80D0500A13D10 /* Measure&Manage.xcdatamodeld in Sources */,
+				521569F921E80D2F00A13D10 /* CoreDataManager.swift in Sources */,
+				52DB001E21E341840037D91F /* Location.swift in Sources */,
+				5229A1E221DF81CD00991945 /* MainTabBarController.swift in Sources */,
+				52DB001C21E33E620037D91F /* LocationNameCollectionViewController.swift in Sources */,
+				521569FF21EC2A5300A13D10 /* CustomTableView.swift in Sources */,
+				52DB002421E36EF50037D91F /* LocationNameCell.swift in Sources */,
+				52B4FF08223D08EF00AB3FD2 /* SearchCollectionViewHeader.swift in Sources */,
+				520B9A4D2218114E00906965 /* DeductionDetailAddViewController.swift in Sources */,
+				5200FE062247834A003DFE9D /* ImageCollectionViewController.swift in Sources */,
+				520B9A3C21FB3AF600906965 /* ProjectItemsCell.swift in Sources */,
 				5229A1E021DF81CD00991945 /* AppDelegate.swift in Sources */,
+				520B9A4721FEC7AE00906965 /* ProjectDetailTextFieldCell.swift in Sources */,
+				5229A20521E086A500991945 /* DeductionProductTableViewController.swift in Sources */,
+				52DB002021E35BF90037D91F /* LocationHeaderView.swift in Sources */,
+				52DB002D21E56C940037D91F /* Deduction.swift in Sources */,
+				52B4FF06223CA4A900AB3FD2 /* ProjectItemDetailDeductionCell.swift in Sources */,
+				520B9A4B2217FEA800906965 /* DeductionDetailTableViewController.swift in Sources */,
+				5229A20821E08E1C00991945 /* DeductionPartTableViewController.swift in Sources */,
+				5229A20121E0757400991945 /* WidthHeightViewController.swift in Sources */,
+				52DB003121E604CB0037D91F /* ProjectsCollectionViewController.swift in Sources */,
+				521569FB21E86E3F00A13D10 /* DeductionTableViewController.swift in Sources */,
+				520B9A5222265B8000906965 /* ProjectItemDetailViewController.swift in Sources */,
+				520B9A3921F8583200906965 /* ProjectsCell.swift in Sources */,
+				5229A1F221DF827F00991945 /* MeasureViewController.swift in Sources */,
+				52DB002B21E5686F0037D91F /* NumberPadStackView.swift in Sources */,
+				5229A1F421E0446100991945 /* Extension.swift in Sources */,
+				5200FE042243958C003DFE9D /* ImageViewController.swift in Sources */,
+				52DB002221E3601C0037D91F /* LocationUnitNumberHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Jae.Measure-Manage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Jae.Measure-Manage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -336,6 +545,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		521569F521E80D0500A13D10 /* Measure&Manage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				521569F621E80D0500A13D10 /* Measure&Manage.xcdatamodel */,
+			);
+			currentVersion = 521569F621E80D0500A13D10 /* Measure&Manage.xcdatamodel */;
+			path = "Measure&Manage.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5229A1D421DF81CD00991945 /* Project object */;
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DeductedValueForItem" representedClassName="DeductedValueForItem" syncable="YES" codeGenerationType="class">
+        <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="projectItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectItem" inverseName="deductedValues" inverseEntity="ProjectItem" syncable="YES"/>
+    </entity>
+    <entity name="Deduction" representedClassName="Deduction" syncable="YES" codeGenerationType="class">
+        <attribute name="deductionIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deductionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deductionDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeductionDetail" inverseName="deduction" inverseEntity="DeductionDetail" syncable="YES"/>
+        <relationship name="part" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Part" inverseName="deductions" inverseEntity="Part" syncable="YES"/>
+        <relationship name="projectItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectItem" inverseName="deductions" inverseEntity="ProjectItem" syncable="YES"/>
+    </entity>
+    <entity name="DeductionDetail" representedClassName="DeductionDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="deductionDetailTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deductionDetailValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desiredValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="viewStyle" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deduction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deduction" inverseName="deductionDetails" inverseEntity="Deduction" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Part" representedClassName="Part" syncable="YES" codeGenerationType="class">
+        <attribute name="partName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deductions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Deduction" inverseName="part" inverseEntity="Deduction" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="parts" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+        <attribute name="productIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Part" inverseName="product" inverseEntity="Part" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES" codeGenerationType="class">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="projectImages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectImage" inverseName="project" inverseEntity="ProjectImage" syncable="YES"/>
+        <relationship name="projectInfos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectInfo" inverseName="project" inverseEntity="ProjectInfo" syncable="YES"/>
+        <relationship name="projectItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectItem" inverseName="project" inverseEntity="ProjectItem" syncable="YES"/>
+    </entity>
+    <entity name="ProjectDetail" representedClassName="ProjectDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="presetTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="detailTitles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectDetailTitle" inverseName="projectDetail" inverseEntity="ProjectDetailTitle" syncable="YES"/>
+    </entity>
+    <entity name="ProjectDetailTitle" representedClassName="ProjectDetailTitle" syncable="YES" codeGenerationType="class">
+        <attribute name="detailTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="projectDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectDetail" inverseName="detailTitles" inverseEntity="ProjectDetail" syncable="YES"/>
+    </entity>
+    <entity name="ProjectImage" representedClassName="ProjectImage" syncable="YES" codeGenerationType="class">
+        <attribute name="projectImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="projectImages" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="ProjectInfo" representedClassName="ProjectInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="detailTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="infoText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="presetTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="projectInfos" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="ProjectItem" representedClassName="ProjectItem" syncable="YES" codeGenerationType="class">
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deductedValues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeductedValueForItem" inverseName="projectItem" inverseEntity="DeductedValueForItem" syncable="YES"/>
+        <relationship name="deductions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deduction" inverseName="projectItem" inverseEntity="Deduction" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="projectItems" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DeductedValueForItem" positionX="284.3515625" positionY="265.05078125" width="128" height="105"/>
+        <element name="Deduction" positionX="-63.71484375" positionY="25.1015625" width="128" height="133"/>
+        <element name="DeductionDetail" positionX="-208.2421875" positionY="38.4140625" width="128" height="120"/>
+        <element name="Location" positionX="-198.1484375" positionY="-66.37890625" width="128" height="88"/>
+        <element name="Part" positionX="101.390625" positionY="17.171875" width="128" height="88"/>
+        <element name="Product" positionX="287.09375" positionY="139.40234375" width="128" height="88"/>
+        <element name="Project" positionX="-103.38671875" positionY="263.4765625" width="128" height="148"/>
+        <element name="ProjectDetail" positionX="-24.8671875" positionY="-71.36328125" width="128" height="73"/>
+        <element name="ProjectDetailTitle" positionX="149.375" positionY="-79.328125" width="128" height="88"/>
+        <element name="ProjectInfo" positionX="112.078125" positionY="345.05859375" width="130.93359375" height="118"/>
+        <element name="ProjectItem" positionX="103.83203125" positionY="160.66796875" width="128" height="180"/>
+        <element name="ProjectImage" positionX="36" positionY="279" width="128" height="75"/>
+    </elements>
+</model>
